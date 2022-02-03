@@ -6,6 +6,7 @@
 require "classes/Personnage.php";
 require "classes/Dragon.php";
 require "classes/Princesse.php";
+require "classes/Sorcier.php";
 
 // Creation d'une instance de la classe personnage
 $humain = new Personnage();
@@ -15,6 +16,26 @@ $humain->setNom("Votre nom");
 $dragon = new Dragon();
 $dragon->setNom("");
 
+// Creation d'une instance de princesse
+$princesse = new Princesse();
+$princesse->setNom("Princesse");
 
+// Creation d'une instance de sorcier
+$sorcier = new Sorcier();
+$sorcier->setNom("Sorcier");
 
+echo "<pre>";
+var_dump($princesse->getNom());
+var_dump($princesse->getId());
+var_dump($princesse->getVie());
+var_dump($princesse->getX());
+var_dump($princesse->getY());
+echo "</pre>";
 
+echo "<pre>";
+var_dump($sorcier->getNom());
+var_dump($sorcier->getId());
+var_dump($sorcier->getVie());
+var_dump($sorcier->getX());
+var_dump($sorcier->getY());
+echo "</pre>";
